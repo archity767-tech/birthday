@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Vaishnavi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      overflow: hidden;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 55px;
+      margin-top: 50px;
+      animation: glow 2s infinite alternate;
+    }
+    h2 {
+      color: #6a0572;
+      font-size: 30px;
+      animation: fadeIn 3s ease-in-out;
+    }
+    p {
+      font-size: 22px;
+      color: #4a148c;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff69b4; }
+      to { text-shadow: 0 0 30px #ff1493; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 80px;
+      height: 100px;
+      background: pink;
+      border-radius: 50%;
+      animation: float 10s infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-120vh); }
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: fly 8s infinite;
+    }
+    .heart:before,
+    .heart:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart:before { top: -10px; left: 0; }
+    .heart:after { left: 10px; top: 0; }
+    @keyframes fly {
+      0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday Vaishnavi 🎉</h1>
+  <h2>23 October – A Special Day 💖</h2>
+  <p>Vaishnavi, tum meri duniya ki sabse khoobsurat roshni ho 🌸</p>
+
+  <div class="photo">
+    <img src="vaishnavi-photo.jpg" alt="Vaishnavi" style="border-radius:20px; width:300px; box-shadow:0 0 20px #ff69b4;">
+  </div>
+
+  <audio controls autoplay>
+    <source src="birthday-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left:10%; background:lightblue; animation-delay:0s;"></div>
+  <div class="balloon" style="left:30%; background:yellow; animation-delay:2s;"></div>
+  <div class="balloon" style="left:50%; background:pink; animation-delay:4s;"></div>
+  <div class="balloon" style="left:70%; background:purple; animation-delay:6s;"></div>
+
+  <!-- Hearts -->
+  <div class="heart" style="left:20%; animation-delay:1s;"></div>
+  <div class="heart" style="left:40%; animation-delay:3s;"></div>
+  <div class="heart" style="left:60%; animation-delay:5s;"></div>
+  <div class="heart" style="left:80%; animation-delay:7s;"></div>   
+</body>
+</html>
